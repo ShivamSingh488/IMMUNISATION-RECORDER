@@ -1,0 +1,109 @@
+{% extends "user_base.html" %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+  <h1>Personal Details</h1>
+
+  <br>
+  <br>
+
+
+  <div class="container">
+    <h3>Child Details</h3>
+    <p style="color: red;">Fill the form carefully. Details are not meant to change for later.*</p>
+    <br>
+    <div class="container">
+
+      <form action="/user/personal_details" method="POST">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Child Name</label>
+          <input type="text" class="form-control"  id="exampleFormControlInput1" name="child_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Date of Birth(Child)</label>
+          <input type="date" class="form-control" id="exampleFormControlInput1" name="dob" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Father Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="father_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Mother Name</label>
+          <input type="text" class="form-control"  id="exampleFormControlInput1" name="mother_name" required>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Blood Group (Child)</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios1" value="A+" >
+              <label class="form-check-label" for="gridRadios1">
+                A+
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="A-">
+              <label class="form-check-label" for="gridRadios2">
+                A-
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="B+">
+              <label class="form-check-label" for="gridRadios2">
+                B+
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="B-">
+              <label class="form-check-label" for="gridRadios2">
+                B-
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="AB+">
+              <label class="form-check-label" for="gridRadios2">
+                AB+
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="AB-">
+              <label class="form-check-label" for="gridRadios2">
+                AB-
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="O+">
+              <label class="form-check-label" for="gridRadios2">
+                O+
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="blood" id="gridRadios2" value="O-">
+              <label class="form-check-label" for="gridRadios2">
+                O-
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+        
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Whether the Child has any pre-exitising
+            Diseases</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="feedback" required>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  {% endblock %}

@@ -1,0 +1,148 @@
+{% extends "user_base.html" %}
+
+{% block content %}
+<br>
+<div class="container">
+    <h1>Your Details</h1>
+    <br>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4"  class="form-label">Child Name</label>
+          <input type="text" value="{{child[0][1]}}" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Date of Birth</label>
+          <input type="text" value="{{child[0][2]}}" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Father's name</label>
+          <input type="text" value="{{child[0][3]}}" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Mother's name</label>
+          <input type="text" value="{{child[0][4]}}" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Whether the Child has any pre-exitising Diseases</label>
+          <input type="text" value="{{child[0][6]}}" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Blood Group</label>
+          <select id="inputState" class="form-select">
+            <option selected>{{child[0][5]}}</option>
+            
+          </select>
+        </div>
+       
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        
+      </form>
+      <br>
+<h1> Protecting Our Future: Timely Child Vaccinations for a Healthy Generation</h1>
+<br>
+<p>
+Ensuring the health and well-being of our children is a responsibility we all share. One of the most effective ways to safeguard their future is through timely vaccination. By immunizing our children at the correct time, we can shield them from preventable diseases, promote overall well-being, and contribute to building a healthier generation. This awareness campaign aims to educate parents and caregivers about the importance of adhering to vaccination schedules and the positive impact it can have on their child's health.
+</p>
+Section 1: Understanding the Importance of Child Vaccination<br>
+<p>1.1 Immunization as a Shield: Vaccines act as a protective shield, equipping a child's immune system to fight off diseases effectively.<br>
+1.2 Disease Prevention: Vaccinations can prevent life-threatening illnesses and reduce the spread of contagious diseases within communities.<br>
+1.3 Long-Term Health Benefits: Timely vaccinations can help prevent complications, disabilities, and even death caused by vaccine-preventable diseases.</p>
+
+Section 2: The Benefits of Adhering to Vaccination Schedules
+<p>
+2.1 Optimal Immunity: Vaccines are designed to be administered at specific ages to ensure maximum effectiveness and long-lasting immunity.<br>
+2.2 Herd Immunity: By vaccinating our children on time, we contribute to herd immunity, protecting those who cannot be vaccinated due to medical conditions.<br>
+2.3 Public Health Impact: Maintaining high vaccination rates in communities helps eradicate diseases and prevent outbreaks, safeguarding everyone's well-being.
+</p>
+Section 3: Common Vaccines and their Timelines
+<p>
+3.1 Early Childhood Vaccinations: Highlighting essential vaccines such as Diphtheria, Pertussis, Tetanus (DPT), Measles, Mumps, Rubella (MMR), Polio, Hepatitis B, and Haemophilus Influenzae Type B (Hib).<br>
+3.2 Pre-Teen and Teen Vaccinations: Discussing vaccines like Tetanus, Diphtheria, Pertussis (Tdap), Human Papillomavirus (HPV), and Meningococcal vaccines.<br>
+3.3 Seasonal Vaccinations: Addressing the importance of annual influenza (flu) vaccinations to protect children during flu seasons.
+</p>
+
+Conclusion:
+By prioritizing timely vaccinations for our children, we invest in their health, protect our communities, and lay the foundation for a brighter, healthier future. Let us come together, armed with knowledge and understanding, to ensure that our children receive the immunizations they need at the correct time. Together, we can safeguard our children from preventable diseases and build a healthier, resilient generation.
+<br>
+<br>
+<h1>Baby Vaccination Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Vaccine</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://pubmed.ncbi.nlm.nih.gov/8613331/">BCG</a></td>
+                <td>At birth</td>
+            </tr>
+            <tr>
+                <td><a
+                        href="https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-7-hepatitis-b-vaccine.html">Hepatitis
+                        B</a> </td>
+                <td>At birth, 6 weeks, and 10 weeks</td>
+            </tr>
+            <tr>
+                <td><a href="Diphtheria, tetanus, and pertussis (DTaP)">Diphtheria, tetanus, and pertussis (DTaP)</a>
+                </td>
+                <td>6 weeks, 10 weeks, and 14 weeks</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/vaccines/vpd/polio/public/index.html">Polio (IPV)</a> </td>
+                <td>6 weeks, 10 weeks, and 14 weeks</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/hi-disease/index.html">Haemophilus influenzae type b (Hib)</a> </td>
+                <td>6 weeks, 10 weeks, and 14 weeks</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/vaccines/vpd/pneumo/index.html">Pneumococcal (PCV)</a> </td>
+                <td>6 weeks, 10 weeks, and 14 weeks</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/rotavirus/index.html"> Rotavirus</a></td>
+                <td>6 weeks and 14 weeks</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/vaccines/vpd/mmr/public/index.html">Measles, mumps, and rubella
+                        (MMR)</a> </td>
+                <td>12 months and 18 months</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/chickenpox/index.html">Varicella (chickenpox)</a> </td>
+                <td>12 months and 18 months</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/hepatitis/hav/havfaq.htm#vaccine"> Hepatitis A</a></td>
+                <td>12 months and 18 months</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/meningococcal/outbreaks/FL2022.html">Meningococcal</a> </td>
+                <td>Between 12 and 23 months</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.cdc.gov/flu/about/keyfacts.htm">Flu (influenza)</a> </td>
+                <td>Every year starting at 6 months</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+{% endblock %}
